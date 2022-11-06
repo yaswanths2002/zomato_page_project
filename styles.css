@@ -146,6 +146,7 @@
 
 .we__offer_card{
     border-radius: 10px;
+    width: 300px;
     /* background-color: aqua; */
     overflow: hidden;
     border: 1px solid gray;
@@ -159,7 +160,7 @@
 
 .we__offer_card img{
     width: 100%;
-    height: 170px;
+    height: 190px;
     /* These are for front images we use object-fit and object-position and for background images we use position */
     object-fit: cover;
     object-position: center;
