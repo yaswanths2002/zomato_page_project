@@ -126,3 +126,55 @@
     }
 }
 
+/* Day-2 */
+/* This is the container one we can use like the below metioned way */
+/* .container{
+    margin: 3rem auto;
+    width: 90%;
+    padding: auto;
+} */
+
+.container__we_offer{
+    margin: 3rem auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.we__offer_card{
+    border-radius: 10px;
+    /* background-color: aqua; */
+    overflow: hidden;
+    border: 1px solid gray;
+    transition: all 0.4s ease;
+}
+/* If we want zoom in we use scale in that 1 means 100 */
+.we__offer_card:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.we__offer_card img{
+    width: 100%;
+    height: 170px;
+    /* These are for front images we use object-fit and object-position and for background images we use position */
+    object-fit: cover;
+    object-position: center;
+}
+
+.we__offer_content{
+    padding: 10px;
+    
+}
+
+.we__offer_content h2{
+    font-size: 15px;
+    font-weight: 400;
+}
+.we__offer_content p{
+    font-size: 12px;
+}
+
