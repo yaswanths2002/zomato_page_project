@@ -262,3 +262,131 @@
     letter-spacing: 0.5px;
 }
 
+/* Day-4 CSS Get the app section */
+
+.get__the_app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 3rem 6rem;
+    background-color: rgb(255,251,247);
+}
+.get__the_app .semicontainer{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.get__the_app .semicontainer .left{
+    flex: 2;
+}
+.get__the_app .semicontainer img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.get__the_app .semicontainer .right{
+    flex: 3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.get__the_app .semicontainer .right h1{
+    font-weight: 400;
+    font-size: 2rem;
+}
+.get__the_app .semicontainer .right p{
+    font-size: 0.8rem;
+}
+.semicontainer .right .radio__button_container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.semicontainer .right .radio__button_container div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+.right .radio__button_container div input{
+    height: 15px;
+    width: 15px;
+    /* for radio button color */
+    accent-color: rgb(239,79,95);
+}
+.semicontainer .right .input_container{
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+.input_container button , .input_container input{
+    padding: 10px 12px;
+}
+.input_container input{
+    flex: auto;
+    border: 1.5px solid gray;
+    outline: none;
+    border-radius: 5px;
+}
+.input_container button{
+    border: none;
+    background-color: rgb(239,79,95);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.right .downloap__app_container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+.downloap__app_container h5{
+    font-size: 400;
+    color: gray;
+}
+.downloap__app_container div{
+    display: flex;
+    gap: 1rem;
+}
+.downloap__app_container div .get_images{
+    width: 35%;
+}
+
+
+
+
+
+
+@media only screen and(max-width:1300px){
+    .get__the_app .semicontainer .left , .get__the_app .semicontainer .right{
+        flex: 1;
+    }
+    .get__the_app .semicontainer{
+        width: 80%;
+    }
+}
+
+@media only screen and(max-width:900px){
+    .get__the_app .semicontainer .left , .get__the_app .semicontainer .right{
+        padding: 2rem;
+    }
+    .get__the_app .semicontainer{
+        width: 90%;
+    }
+}
+
+@media only screen and(max-width:700px){
+    .get__the_app .semicontainer .left , .get__the_app .semicontainer .right{
+        padding: 3rem;
+    }
+    .get__the_app .semicontainer{
+        width: 80%;
+        flex-direction: column;
+    }
+}
